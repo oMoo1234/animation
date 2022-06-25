@@ -1,4 +1,19 @@
 .body{
-    background-color: black;
-    color: green;
+    background-color: pink;
+
+}
+.row{
+
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#bt-1{
+
+}
+#bt-12{
+
 }
