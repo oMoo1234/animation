@@ -4,16 +4,26 @@
 }
 .row{
 
-    text-align: left;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+    position: fixed;
+    margin: auto;
+    width: 50%;
+    left: 25%;
+
+    /* border: solid; */
+    /* border-width: 5px; */
+    /* background-color: aqua; */
+
+
 
 }
-#bt-1{
+.animations{
+    margin: auto;
+    height: 450px;
+    width: 70%;
 
-}
-#bt-12{
+    /* border: solid; */
+    border-width: 5px;
+    background-color: antiquewhite;
 
 }
