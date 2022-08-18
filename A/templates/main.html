@@ -9,28 +9,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/main.css">
     <script>
+        //Hide function
         $(document).ready(function(){
           $("#bt1").click(function(){
             $("#box").hide();
           });
         });
+        //Show Function
         $(document).ready(function(){
           $("#bt2").click(function(){
             $("#box").show(1000).css({"background-color":"#fcce03", "height":"450px"})
 
           });
         });
+        //remove picture
+        $(document).ready(function(){
+          $("#bt2").click(function(){
+            $("#pic").removeAttr("src")
+          });
+        });
+        //change background color
         $(document).ready(function(){
           $("#bt3").click(function(){
-            $("#box").css({"background-color": "#0390fc", "height":"450px"});
+            $("#box").css({"background-color": "#0390fc", "height":"450px"})
           });
         });
-
+        // remove picture
+        $(document).ready(function(){
+          $("#bt3").click(function(){
+            $("#pic").removeAttr("src")
+          });
+        });
+        //insert picture
         $(document).ready(function(){
           $("#bt4").click(function(){
-            $("#pic").attr({"src":"./static/pic/rain.jpg","alt":"rain",}).css({"height":"100%", "width":"100%",});
+            $("#pic").attr({"src":"./static/pic/rain.jpg"})
+            .css({"height":"100%", "width":"100%",});
           });
         });
+        //clear pic and set background to black
+
 
         </script>
 
@@ -40,13 +58,14 @@
       <img id="pic" src="" alt="">
 
 
+
     </div>
     <div class="row">
         <button id="bt1" class="col-lg-1 btn btn-basic"> 1</button>
         <button id="bt2" class="col-lg-1 btn btn-default">2</button>
         <button id="bt3" class="col-lg-1 btn btn-primary">3</button>
         <button id="bt4" class="col-lg-1 btn btn-success">4</button>
-        <button class="col-lg-1 btn btn-info">5</button>
+        <button id="bt5" class="col-lg-1 btn btn-info">5</button>
         <button class="col-lg-1 btn btn-warning">6</button>
         <button class="col-lg-1 btn btn-danger">7</button>
         <button class="col-lg-1 btn btn-warning">8</button>
