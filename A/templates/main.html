@@ -48,17 +48,55 @@
           });
         });
         //clear pic and set background to black
+        $(document).ready(function(){
+          $("#bt5").click(function(){
+            $("#box").remove()
+          });
+        });
+        $(document).ready(function(){
+          $("#bt5").click(function(){
+            $("#body").css({"background-color":"black"})
+          });
+        });
+        //get #box back
 
+
+        $(document).ready(function(){
+          $("#bt5").dblclick(function(){
+            $("#mainbox").html("<p>Hello :)</p>").css({"color":"yellow","text-align":"center"})
+          });
+        });
+        $(document).ready(function(){
+          $("#bt5").dblclick(function(){
+            $("#bt1,#bt2,#bt3,#bt4").remove();
+          });
+        });
+
+        //reload page
+        $(document).ready(function(){
+          $("#bt7").click(function(){
+            location.reload(true);
+          });
+        });
+        //Rain
+        $(document).ready(function(){
+          $("#bt6").dblclick(function(){
+            location.reload(true);
+          });
+        });
 
         </script>
 
+
 </head>
-<body class="body">
+<body id="body">
+  <div id="mainbox">
     <div class="animations" id="box">
       <img id="pic" src="" alt="">
 
 
 
+    </div>
     </div>
     <div class="row">
         <button id="bt1" class="col-lg-1 btn btn-basic"> 1</button>
@@ -66,8 +104,8 @@
         <button id="bt3" class="col-lg-1 btn btn-primary">3</button>
         <button id="bt4" class="col-lg-1 btn btn-success">4</button>
         <button id="bt5" class="col-lg-1 btn btn-info">5</button>
-        <button class="col-lg-1 btn btn-warning">6</button>
-        <button class="col-lg-1 btn btn-danger">7</button>
+        <button id="bt6"class="col-lg-1 btn btn-warning">6</button>
+        <button id="bt7"class="col-lg-1 btn btn-danger">7</button>
         <button class="col-lg-1 btn btn-warning">8</button>
         <button class="col-lg-1 btn btn-info">9</button>
         <button class="col-lg-1 btn btn-success">10</button>

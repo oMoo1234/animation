@@ -1,5 +1,6 @@
-.body{
+#body{
     background-color: pink;
+    text-align: center;
 
 }
 .row{
@@ -9,6 +10,8 @@
     margin: auto;
     width: 50%;
     left: 25%;
+    text-align: center;
+    align-items: center;
 
     /* border: solid; */
     /* border-width: 5px; */
@@ -25,5 +28,7 @@
     /* border: solid; */
     border-width: 5px;
     background-color: antiquewhite;
+    text-align: center;
+    align-items: center;
 
 }
